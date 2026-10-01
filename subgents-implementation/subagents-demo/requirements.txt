@@ -1,0 +1,28 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Sub-Agents Demo – Python dependencies
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Environment variable loading
+python-dotenv>=1.0.0
+
+# Safe HTTP client used by the Ollama backend
+requests>=2.31.0
+
+# ── llama.cpp backend (LLM_BACKEND=llamacpp) ─────────────────────────────────
+# In-process inference via llama-cpp-python.  Optional – uncomment to install
+# via pip, or install manually with GPU flags (see README for details):
+#   CPU only:               pip install llama-cpp-python>=0.2.90
+#   Apple Silicon (Metal):  CMAKE_ARGS="-DLLAMA_METAL=on" pip install llama-cpp-python>=0.2.90
+#   NVIDIA CUDA:            CMAKE_ARGS="-DLLAMA_CUBLAS=on" pip install llama-cpp-python>=0.2.90
+# llama-cpp-python>=0.2.90
+
+# ── Web UI (src/ui.py) ────────────────────────────────────────────────────────
+streamlit>=1.35.0
+
+# ── Optional: OpenAI backend (LLM_BACKEND=openai) ────────────────────────────
+# openai>=1.30.0
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Dev / test dependencies
+# ─────────────────────────────────────────────────────────────────────────────
+pytest>=8.0.0

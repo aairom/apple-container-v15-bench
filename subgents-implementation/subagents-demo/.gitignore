@@ -1,0 +1,45 @@
+# Environment files
+.env
+*.env
+
+# Python virtual environment
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Folders starting with underscore (project rule)
+_*/
+
+# Output files (timestamped, regenerated on each run)
+output/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Model artefacts (project rule)
+*.onnx
+*.onnx.data
+*.so
+*.tgz
+*.tar.gz
+*.zip
+*.dylib
+
+# Playwright
+.playwright-mcp/
+
+# Logs
+*.log
+logs/
