@@ -1,0 +1,61 @@
+# ── Secrets & environment ────────────────────────────────────────────────────
+.env
+*.env
+
+# ── Underscore-prefixed private folders ─────────────────────────────────────
+_*/
+
+# ── Go build artefacts ───────────────────────────────────────────────────────
+container-compare
+*.exe
+*.dll
+*.so
+*.dylib
+vendor/
+
+# ── Go test cache ─────────────────────────────────────────────────────────────
+*.test
+*.out
+
+# ── Output content (keep directory, not content) ─────────────────────────────
+output/*
+!output/.gitkeep
+
+# ── Input content (keep directory, not content) ───────────────────────────────
+input/*
+!input/.gitkeep
+
+# ── macOS ────────────────────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# ── Binary & archive artefacts ────────────────────────────────────────────────
+*.onnx
+*.onnx.data
+*.tgz
+*.tar.gz
+*.zip
+
+# ── Container images (local build artefacts) ─────────────────────────────────
+*.img
+
+# ── Playwright MCP ───────────────────────────────────────────────────────────
+.playwright-mcp/
+
+# ── Node (not used here, but required by rule) ────────────────────────────────
+node_modules/
+
+# ── Bob configuration secrets ────────────────────────────────────────────────
+.bob/mcp.json
+AGENTS.md
